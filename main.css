@@ -1,0 +1,258 @@
+/* poppins-regular - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/poppins-v20-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-500 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+    url('../fonts/poppins-v20-latin-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/poppins-v20-latin-500.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-800 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+    url('../fonts/poppins-v20-latin-800.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/poppins-v20-latin-800.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+.navbar-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background-color: #000000;
+  transform: translateX(-100%);
+  transition: 0.7s;
+}
+
+.navbar-nav.shownav {
+  transform: translateX(0%);
+}
+
+.btn {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  background: #e5e5e5;
+  border: 2px solid #263238;
+  border-radius: 5px;
+}
+
+.header__link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #263238;
+  text-decoration: none;
+}
+
+/* .lamp {
+  display: flex;
+} */
+
+.burger {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.burger__span {
+  display: inline-block;
+  width: 35px;
+  height: 3px;
+  margin: 3px 0;
+  background-color: #000000;
+  transition: 0.7s;
+}
+
+.burger.shownav .burger__span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.shownav .burger__span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.burger.shownav .burger__span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.div {
+  min-height: 200px;
+}
+
+
+@media only screen and (min-width:768px) {
+
+  .navbar-nav {
+    position: static;
+    transform: translateX(0);
+    background-color: transparent;
+    width: max-content;
+
+  }
+
+  .header__link {
+    color: #000000 !important;
+  }
+
+}
+
+
+
+
+.learn {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.teachers {
+  margin-bottom: 55px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #8F95A5;
+}
+
+.button-first {
+  width: 438px;
+  height: 118px;
+  background: #263238;
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+  color: #FFFFFF;
+}
+
+.speaking-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 80px;
+  color: #263238;
+}
+
+.speaking-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8f95a5;
+}
+
+.Speaking {
+  max-width: 435px;
+  height: 990px;
+  padding: 0 43px 92px 43px;
+  background-color: #F5F5F5;
+}
+
+.Writing {
+  max-width: 434px;
+  height: 632px;
+  padding: 0 41px 44px 41px;
+  background-color: #F5F5F5;
+}
+
+.Reading {
+  max-width: 434px;
+  height: 632px;
+  padding: 47px 41px 44px 41px;
+  background-color: #F5F5F5;
+}
+
+.Listening {
+  max-width: 855px;
+  height: 343px;
+  padding: 44px 15px 44px 44px;
+  background-color: #F5F5F5;
+}
+
+.box {
+  min-height: 250px;
+}
+
+
+
+@media only screen and (max-width:992px) {
+  .learn {
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 27px;
+  }
+
+  .teachers {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:767px) {
+  .learn {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .teachers {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width:575px) {
+  .learn {
+    font-size: 34px;
+    line-height: 45px;
+  }
+}
+
+@media only screen and (max-width:320px) {
+  .learn {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+
+.contact_form{
+  margin-top: 100px;
+}
